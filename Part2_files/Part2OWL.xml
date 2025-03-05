@@ -1,0 +1,656 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/bilk7/ontologies/2025/0final_project_part_2"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/bilk7/ontologies/2025/0final_project_part_2">
+    <Prefix name="" IRI="http://www.semanticweb.org/bilk7/ontologies/2025/0final_project_part_2/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.opengis.net/ont/geosparql/1.1</Import>
+    <Import>http://www.w3.org/2006/time#2016</Import>
+    <Import>http://www.w3.org/ns/ssn/</Import>
+    <Declaration>
+        <Class IRI="#CommercialZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GreenSpace"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndustrialZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MaintenanceEntity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PublicFacility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidentialZone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransportHub"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UrbanDevelopmentProject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ZoningRegulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="https://schema.org/Organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#adjacentTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#connectsTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containsFacility"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOperatingHours"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProject"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implementsRegulation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#maintainedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresPermit"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAccessibilityScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCapacity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConstructionDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEnvironmentalImpact"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHistoricalStatus"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLandUseType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPopulationDensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRiskLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTransitAccessibility"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#influencesProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#providesService"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#requiresInvestment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#servesPopulation"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#CommercialZone"/>
+        <Class IRI="#UrbanArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GreenSpace"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndustrialZone"/>
+        <Class IRI="#UrbanArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MaintenanceEntity"/>
+        <Class IRI="https://schema.org/Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PublicFacility"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ResidentialZone"/>
+        <Class IRI="#UrbanArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransportHub"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#Feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UrbanArea"/>
+        <Class IRI="http://www.opengis.net/ont/geosparql#SpatialObject"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#adjacentTo"/>
+        <Class IRI="#UrbanArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#connectsTo"/>
+        <Class IRI="#TransportHub"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containsFacility"/>
+        <Class IRI="#UrbanArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasOperatingHours"/>
+        <Class IRI="#PublicFacility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProject"/>
+        <Class IRI="#UrbanDevelopmentProject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implementsRegulation"/>
+        <Class IRI="#UrbanArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maintainedBy"/>
+        <Class IRI="#PublicFacility"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#maintainedBy"/>
+        <Class IRI="#UrbanArea"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresPermit"/>
+        <Class IRI="#UrbanDevelopmentProject"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#adjacentTo"/>
+        <Class IRI="#UrbanArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#connectsTo"/>
+        <Class IRI="#UrbanArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containsFacility"/>
+        <Class IRI="#PublicFacility"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasOperatingHours"/>
+        <Class IRI="http://www.w3.org/2006/time#Interval"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProject"/>
+        <Class IRI="#GreenSpace"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProject"/>
+        <Class IRI="#PublicFacility"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProject"/>
+        <Class IRI="#TransportHub"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProject"/>
+        <Class IRI="#UrbanArea"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implementsRegulation"/>
+        <Class IRI="#ZoningRegulation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#maintainedBy"/>
+        <Class IRI="#MaintenanceEntity"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHistoricalStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAccessibilityScore"/>
+        <Class IRI="#PublicFacility"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCapacity"/>
+        <Class IRI="#PublicFacility"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConstructionDate"/>
+        <Class IRI="#UrbanDevelopmentProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEnvironmentalImpact"/>
+        <Class IRI="#UrbanDevelopmentProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHistoricalStatus"/>
+        <Class IRI="#ZoningRegulation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLandUseType"/>
+        <Class IRI="#UrbanArea"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPopulationDensity"/>
+        <Class IRI="#UrbanArea"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <Class IRI="#UrbanDevelopmentProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTransitAccessibility"/>
+        <Class IRI="#UrbanArea"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#influencesProperty"/>
+        <Class IRI="#GreenSpace"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#influencesProperty"/>
+        <Class IRI="#PublicFacility"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#influencesProperty"/>
+        <Class IRI="#TransportHub"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#influencesProperty"/>
+        <Class IRI="#UrbanArea"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#providesService"/>
+        <Class IRI="#PublicFacility"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#requiresInvestment"/>
+        <Class IRI="#UrbanDevelopmentProject"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#servesPopulation"/>
+        <Class IRI="#PublicFacility"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAccessibilityScore"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCapacity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConstructionDate"/>
+        <Datatype abbreviatedIRI="xsd:date"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEnvironmentalImpact"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHistoricalStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLandUseType"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPopulationDensity"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRiskLevel"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTransitAccessibility"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#influencesProperty"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#providesService"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#requiresInvestment"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#servesPopulation"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CommercialZone</IRI>
+        <Literal>Area designated for business and retail</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CommercialZone</IRI>
+        <Literal>Commercial Zone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GreenSpace</IRI>
+        <Literal>Natural or landscaped areas within urban environments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GreenSpace</IRI>
+        <Literal>Green Space</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndustrialZone</IRI>
+        <Literal>Area designated for manufacturing and industrial activities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndustrialZone</IRI>
+        <Literal>Industrial Zone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MaintenanceEntity</IRI>
+        <Literal>An entity managing maintenance of one more given zones</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MaintenanceEntity</IRI>
+        <Literal>Maintenance Entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PublicFacility</IRI>
+        <Literal>Infrastructure serving community needs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PublicFacility</IRI>
+        <Literal>Public Facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ResidentialZone</IRI>
+        <Literal>Area designated primarily for housing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ResidentialZone</IRI>
+        <Literal>Residential Zone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransportHub</IRI>
+        <Literal>Central point for multiple transportation modes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransportHub</IRI>
+        <Literal>Transport Hub</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanArea</IRI>
+        <Literal>A geographical region characterized by human settlement and built environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UrbanArea</IRI>
+        <Literal>Urban Area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UrbanDevelopmentProject</IRI>
+        <Literal>Planned initiative to develop or modify urban infrastructure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UrbanDevelopmentProject</IRI>
+        <Literal>Urban Development Project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ZoningRegulation</IRI>
+        <Literal>Legal framework defining land use and development restrictions</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ZoningRegulation</IRI>
+        <Literal>Zoning Regulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#connectsTo</IRI>
+        <Literal>Indicates physical connections between urban elements.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#connectsTo</IRI>
+        <Literal>Connects to</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#containsFacility</IRI>
+        <Literal>Links an area to its facilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#containsFacility</IRI>
+        <Literal>Contains facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasAccessibilityScore</IRI>
+        <Literal>Rates the overall accessibility for different user groups</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasAccessibilityScore</IRI>
+        <Literal>has accessibility score</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCapacity</IRI>
+        <Literal>Specifies the maximum occupancy or usage limit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasCapacity</IRI>
+        <Literal>Has capacity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>#hasConstructionDate</IRI>
+        <Literal>Specifies when a structure or facility was built.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasConstructionDate</IRI>
+        <Literal>Has construction date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasEnvironmentalImpact</IRI>
+        <Literal>Quantifies the effect on the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasEnvironmentalImpact</IRI>
+        <Literal>Has environmental impact</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasHistoricalStatus</IRI>
+        <Literal>Indicates historical or preservation designation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasHistoricalStatus</IRI>
+        <Literal>has historical status</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasLandUseType</IRI>
+        <Literal>Specifies the designated use of an area</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasLandUseType</IRI>
+        <Literal>has land use type</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasOperatingHours</IRI>
+        <Literal>Specifies when a facility or service is available</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasOperatingHours</IRI>
+        <Literal>has operating hours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasPopulationDensity</IRI>
+        <Literal>Specifies the number of people per unit area in an urban area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPopulationDensity</IRI>
+        <Literal>has population density</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasProject</IRI>
+        <Literal>Zone of development of a project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasProject</IRI>
+        <Literal>Has project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasRiskLevel</IRI>
+        <Literal>Indicates vulnerability to natural or human-made hazards.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasRiskLevel</IRI>
+        <Literal>Has risk level</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasTransitAccessibility</IRI>
+        <Literal>Measures the ease of access to public transportation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasTransitAccessibility</IRI>
+        <Literal>Has transit accessibility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#implementsRegulation</IRI>
+        <Literal>Links an area to its governing regulations</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#implementsRegulation</IRI>
+        <Literal>implements regulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#influencesProperty</IRI>
+        <Literal>Indicates impact on surrounding property values</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#influencesProperty</IRI>
+        <Literal>influences property</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#maintainedBy</IRI>
+        <Literal>Specifies the entity responsible for maintenance.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#maintainedBy</IRI>
+        <Literal>Maintained by</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#providesService</IRI>
+        <Literal>services offered in an area or facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#providesService</IRI>
+        <Literal>provides service</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requiresInvestment</IRI>
+        <Literal>Specifies required financial resources for development or maintenance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#requiresInvestment</IRI>
+        <Literal>requires investment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#requiresPermit</IRI>
+        <Literal>Links to required permits or authorizations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#requiresPermit</IRI>
+        <Literal>Requires permit</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#servesPopulation</IRI>
+        <Literal>Indicates the number of people served by a facility or area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#servesPopulation</IRI>
+        <Literal>Serves population</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

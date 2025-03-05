@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-7"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-7">
+    <Prefix name="" IRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-7/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-7" IRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-7#"/>
+    <Declaration>
+        <Class IRI="#Architect"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exhibition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Museum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tourism"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#design"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enhances"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hosts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#increases"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BilbaoCulture"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BilbaoTourism"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ContemporaryArt"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FrankGehry"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guggenheim"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ModernArt"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="#Architect"/>
+        <Class IRI="#Culture"/>
+        <Class IRI="#Exhibition"/>
+        <Class IRI="#Museum"/>
+        <Class IRI="#Tourism"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Culture"/>
+        <NamedIndividual IRI="#BilbaoCulture"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tourism"/>
+        <NamedIndividual IRI="#BilbaoTourism"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exhibition"/>
+        <NamedIndividual IRI="#ContemporaryArt"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Architect"/>
+        <NamedIndividual IRI="#FrankGehry"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Museum"/>
+        <NamedIndividual IRI="#Guggenheim"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Exhibition"/>
+        <NamedIndividual IRI="#ModernArt"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#increases"/>
+        <NamedIndividual IRI="#BilbaoCulture"/>
+        <NamedIndividual IRI="#BilbaoTourism"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enhances"/>
+        <NamedIndividual IRI="#ContemporaryArt"/>
+        <NamedIndividual IRI="#BilbaoCulture"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#design"/>
+        <NamedIndividual IRI="#FrankGehry"/>
+        <NamedIndividual IRI="#Guggenheim"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#Guggenheim"/>
+        <NamedIndividual IRI="#ContemporaryArt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hosts"/>
+        <NamedIndividual IRI="#Guggenheim"/>
+        <NamedIndividual IRI="#ModernArt"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enhances"/>
+        <NamedIndividual IRI="#ModernArt"/>
+        <NamedIndividual IRI="#BilbaoCulture"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#design"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#enhances"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hosts"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#increases"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#design"/>
+        <Class IRI="#Architect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enhances"/>
+        <Class IRI="#Exhibition"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hosts"/>
+        <Class IRI="#Museum"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#increases"/>
+        <Class IRI="#Culture"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#design"/>
+        <Class IRI="#Museum"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enhances"/>
+        <Class IRI="#Culture"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hosts"/>
+        <Class IRI="#Exhibition"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#increases"/>
+        <Class IRI="#Tourism"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

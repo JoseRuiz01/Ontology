@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-8"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-8">
+    <Prefix name="" IRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-8/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-8" IRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-8#"/>
+    <Declaration>
+        <Class IRI="#GlobalScore"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LanguageTest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProficiencyLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Section"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SectionScore"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#determines"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#measures"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EnglishProficiency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Listening"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ListeningScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Reading"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReadingScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Speaking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SpeakingScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TOEFL"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TOEFLScore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Writing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WritingScore"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Section"/>
+        <Class IRI="#LanguageTest"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SectionScore"/>
+        <Class IRI="#GlobalScore"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#LanguageTest"/>
+        <Class IRI="#ProficiencyLevel"/>
+        <Class IRI="#Section"/>
+        <Class IRI="#SectionScore"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ProficiencyLevel"/>
+        <NamedIndividual IRI="#EnglishProficiency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Section"/>
+        <NamedIndividual IRI="#Listening"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SectionScore"/>
+        <NamedIndividual IRI="#ListeningScore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Section"/>
+        <NamedIndividual IRI="#Reading"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SectionScore"/>
+        <NamedIndividual IRI="#ReadingScore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Section"/>
+        <NamedIndividual IRI="#Speaking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SectionScore"/>
+        <NamedIndividual IRI="#SpeakingScore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#LanguageTest"/>
+        <NamedIndividual IRI="#TOEFL"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#GlobalScore"/>
+        <NamedIndividual IRI="#TOEFLScore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Section"/>
+        <NamedIndividual IRI="#Writing"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SectionScore"/>
+        <NamedIndividual IRI="#WritingScore"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Listening"/>
+        <NamedIndividual IRI="#ListeningScore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#ListeningScore"/>
+        <NamedIndividual IRI="#TOEFLScore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Reading"/>
+        <NamedIndividual IRI="#ReadingScore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#ReadingScore"/>
+        <NamedIndividual IRI="#TOEFLScore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Speaking"/>
+        <NamedIndividual IRI="#SpeakingScore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#SpeakingScore"/>
+        <NamedIndividual IRI="#TOEFLScore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#TOEFL"/>
+        <NamedIndividual IRI="#Listening"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#TOEFL"/>
+        <NamedIndividual IRI="#Reading"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#TOEFL"/>
+        <NamedIndividual IRI="#Speaking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#TOEFL"/>
+        <NamedIndividual IRI="#Writing"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#determines"/>
+        <NamedIndividual IRI="#TOEFLScore"/>
+        <NamedIndividual IRI="#EnglishProficiency"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#measures"/>
+        <NamedIndividual IRI="#Writing"/>
+        <NamedIndividual IRI="#WritingScore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#partOf"/>
+        <NamedIndividual IRI="#WritingScore"/>
+        <NamedIndividual IRI="#TOEFLScore"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#determines"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#includes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#measures"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#GlobalScore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#LanguageTest"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#Section"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#SectionScore"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#determines"/>
+        <Class IRI="#ProficiencyLevel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Section"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#measures"/>
+        <Class IRI="#SectionScore"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#partOf"/>
+        <Class IRI="#GlobalScore"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

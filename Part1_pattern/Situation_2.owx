@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-6"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-6">
+    <Prefix name="" IRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-6/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-6" IRI="http://www.semanticweb.org/joseantonioruizheredia/ontologies/2025/0/untitled-ontology-6#"/>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Renovation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stadium"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enables"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#undergoes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MultidisciplinaryEvent"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetractablePitch"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RetractableRoof"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SantiagoBernabeu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SantiagoBernabeu_Renovation"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Scoreboard360"/>
+    </Declaration>
+    <DisjointClasses>
+        <Class IRI="#Event"/>
+        <Class IRI="#Feature"/>
+        <Class IRI="#Renovation"/>
+        <Class IRI="#Stadium"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Event"/>
+        <NamedIndividual IRI="#MultidisciplinaryEvent"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feature"/>
+        <NamedIndividual IRI="#RetractablePitch"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feature"/>
+        <NamedIndividual IRI="#RetractableRoof"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stadium"/>
+        <NamedIndividual IRI="#SantiagoBernabeu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Renovation"/>
+        <NamedIndividual IRI="#SantiagoBernabeu_Renovation"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Feature"/>
+        <NamedIndividual IRI="#Scoreboard360"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enables"/>
+        <NamedIndividual IRI="#RetractablePitch"/>
+        <NamedIndividual IRI="#MultidisciplinaryEvent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enables"/>
+        <NamedIndividual IRI="#RetractableRoof"/>
+        <NamedIndividual IRI="#MultidisciplinaryEvent"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#undergoes"/>
+        <NamedIndividual IRI="#SantiagoBernabeu"/>
+        <NamedIndividual IRI="#SantiagoBernabeu_Renovation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#SantiagoBernabeu_Renovation"/>
+        <NamedIndividual IRI="#RetractablePitch"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#SantiagoBernabeu_Renovation"/>
+        <NamedIndividual IRI="#RetractableRoof"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#includes"/>
+        <NamedIndividual IRI="#SantiagoBernabeu_Renovation"/>
+        <NamedIndividual IRI="#Scoreboard360"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#enables"/>
+        <NamedIndividual IRI="#Scoreboard360"/>
+        <NamedIndividual IRI="#MultidisciplinaryEvent"/>
+    </ObjectPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#enables"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#includes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#undergoes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#enables"/>
+        <Class IRI="#Feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Renovation"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#undergoes"/>
+        <Class IRI="#Stadium"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#enables"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <Class IRI="#Feature"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#undergoes"/>
+        <Class IRI="#Renovation"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
